@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
             <h1 className="text-5xl text-center  p-32">
-                Welcome we are building .....
+                Welcome we are building imad.....
             </h1>
         </div>
     )
