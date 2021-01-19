@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from './logo.png';
+import { Link } from '@reach/router'
+
 
 
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
@@ -25,8 +27,9 @@ const Header = (props) => {
 
             <div className="flex justify-evenly gap-10 text-xl" >
                 {tabs.map(tab =>
-
-                    <p className={(props.tab == tab) && `text-red-400`}>{tab}</p>
+                    <Link to={`/${tab}`}>
+                        <p className={(props.tab == tab) && `text-red-400`}>{tab}</p>
+                    </Link>
 
                 )}
 
