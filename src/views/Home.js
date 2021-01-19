@@ -1,12 +1,14 @@
 import { Link } from '@reach/router'
 import React from 'react'
+import Header from '../components/user/Header'
 
 function Home() {
     return (
-        <div>
-            <h1 className="text-5xl text-center  p-32">
-                Welcome we are building .....
-            </h1>
+        <div className=" flex  flex-col">
+            <Header tab={'Accueil'} />
+
+
+
         </div>
     )
 }
