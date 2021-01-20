@@ -1,5 +1,6 @@
 import React, { useState, useContext, useRef, useEffect } from 'react'
 import SendSharpIcon from '@material-ui/icons/SendSharp';
+import TelegramIcon from '@material-ui/icons/Telegram';
 import ChatMessage from './ChatMessage';
 
 
@@ -52,7 +53,7 @@ const Chat = (props) => {
             <div className="flex items-center justify-between p-2 px-4 border border-gray-300">
                 <input className="p-2 focus:outline-none placeholder-gray-300 " placeholder="ecrire ton message... "
                     type="text" onChange={(evt) => setMessage(evt.target.value)} />
-                <SendSharpIcon onClick={() => sendMessage(message, props.username)} fontSize="large" className="transform text-red-400  hover:text-red-300 cursor-pointer" />
+                <TelegramIcon onClick={() => sendMessage(message, props.username)} fontSize="large" className="transform text-red-400  hover:text-red-300 cursor-pointer" />
 
             </div>
 

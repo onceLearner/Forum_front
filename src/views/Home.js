@@ -27,7 +27,7 @@ function Home() {
 
 
     useEffect(() => {
-        socket.current = Io(url.local);
+        socket.current = Io(url.remote);
         socket.current.on("connect", (data) => {
             console.log("hello world ")
         })
