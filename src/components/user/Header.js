@@ -20,7 +20,7 @@ const Header = (props) => {
             <div className="flex  items-center gap-3">
 
                 <span class="relative  inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                <p className="text-base text-gray-500 " style={{ fontWeight: "300" }}>54 online</p>
+                <p className="text-base text-gray-500 " style={{ fontWeight: "300" }}>{props.userCount} online</p>
 
 
             </div>

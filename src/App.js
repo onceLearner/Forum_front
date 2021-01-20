@@ -1,5 +1,6 @@
 import { Router } from "@reach/router"
 import SimplePeer from "simple-peer";
+import { UserProvider } from "./context/User";
 import Home from "./views/Home";
 import Session from "./views/Session";
 
@@ -7,10 +8,12 @@ import Session from "./views/Session";
 
 function App() {
   return (
-    <Router>
-      <Home path="/Accueil" />
-      <Session path="/Session" />
-    </Router>
+    <UserProvider>
+      <Router>
+        <Home path="/Accueil" />
+        <Session path="/Session" />
+      </Router>
+    </UserProvider>
 
   );
 }
