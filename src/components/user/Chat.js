@@ -2,6 +2,8 @@ import React, { useState, useContext, useRef, useEffect } from 'react'
 import SendSharpIcon from '@material-ui/icons/SendSharp';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import ChatMessage from './ChatMessage';
+import { v4 as uuidv4 } from "uuid"
+
 
 
 
@@ -42,7 +44,7 @@ const Chat = (props) => {
             <div className=" p-8 border border-gray-100 space-y-7 h-full ">
                 {
                     receivedMsgs.map(msg =>
-                        <ChatMessage username={msg.username} message={msg.message} />
+                        <ChatMessage username={msg.username} key={uuidv4()} message={msg.message} />
                     )
                 }
 

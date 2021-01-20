@@ -7,7 +7,7 @@ import { Link } from '@reach/router'
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
 
-const tabs = ['Accueil', "Session", "Exp", "Jobs"]
+const tabs = ['Accueil', "Session", "Expo", "Jobs"]
 
 const Header = (props) => {
     return (

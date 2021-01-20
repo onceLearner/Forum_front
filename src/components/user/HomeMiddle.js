@@ -8,7 +8,7 @@ const HomeMiddle = () => {
             <p className="text-2xl text-gray-400">Live </p>
             <div className="h-full w-full flex flex-col justify-start items-center">
                 <ReactPlayer
-                    playing="false"
+                    playing={false}
                     width="90%"
                     height="90%"
 
