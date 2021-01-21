@@ -11,9 +11,9 @@ const tabs = ['Accueil', "Session", "Expo", "Jobs"]
 
 const Header = (props) => {
     return (
-        <div className=" flex shadow-md items-center  justify-between p-4 px-10 text-lg" style={{ fontFamily: "Montserrat", fontWeight: "600" }}>
+        <div className=" flex shadow-md items-center  justify-between p-1 px-10 text-lg" style={{ fontFamily: "Montserrat", fontWeight: "600" }}>
             <div>
-                <img width="100" height="30" src={logo} alt="logo" />
+                <Link to="/" ><img width="100" height="30" src={logo} alt="logo" /></Link>
 
             </div>
 

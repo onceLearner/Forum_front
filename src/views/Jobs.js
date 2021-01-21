@@ -98,7 +98,7 @@ const Jobs = () => {
                 <div className="flex flex-wrap gap-4 p-7">
 
                     {data.map(job =>
-                        <Link to="/JobDetails">
+                        <Link to={job.id_job}>
                             <JobCard key={uuidv4()} job={job} />
                         </Link>
                     )}
